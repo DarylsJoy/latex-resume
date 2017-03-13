@@ -1,0 +1,148 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage{geometry}
+%\usepackage[scale=0.86]{geometry}
+\geometry{left=1.5cm,right=1.5cm,top=1.5cm,bottom=0cm}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% 个人信息
+\firstname{董鑫强   }
+\familyname{}
+\title{求职意向 : 　　     
+Web前端开发}                      % 可选项、如不需要可删除本行
+% \address{xx区xx路xx号}{100876 北京}             % 可选项、如不需要可删除本行
+\mobile{+86~18821727280}                         % 可选项、如不需要可删除本行
+%\phone{+2~(345)~678~901}                          % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                            % 可选项、如不需要可删除本行
+\email{joynjoy@163.com}                    % 可选项、如不需要可删除本行
+%\homepage{技术博客：\url{http://daryldong.com}}                  % 可选项、如不需要可删除本行
+\extrainfo{2014届长安大学信息工程学院网络工程 本科}
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+%\photo[64pt]{avatar2.jpg}                  
+% ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{GitHub：\url{https://github.com/DarylsJoy}}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+\maketitle
+
+%\section{教育背景}
+%\cventry{2014 -- 2018}{本科}{长安大学}{信息工程学院}{网络工程}{}  % 第3到第6编码可留白
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{社区}
+\renewcommand{\baselinestretch}{1.2}
+\cventry{技术博客}{\url{http://daryldong.com}}{}{}{}{}
+\cventry{GitHub}{\url{https://github.com/DarylsJoy}}{}{}{}{}
+%\cventry{}{\url{http://}}{}{}{}{}
+
+%\section{语言技能}
+%\cvline{英语}{\textbf{CET-6: 445}}
+%\cvline{普通话}{母语}
+
+\section{专业技能}
+\cvline{语言相关}{熟悉HTML(5)，CSS(3)，JavaScript；了解ES6规范及特性；}
+\cvline{}{熟悉Bootstrap，jQuery；熟悉Sass，Compass；熟悉Vue.js；}
+\cvline{}{熟悉PHP和MySQL，有过简单开发经验。}
+\cvline{技能相关}{能够实现响应式布局，有简单的移动端开发经验，了解常见的浏览器兼容性问题；}
+\cvline{}{代码规范(如参考ESLint规范JS代码)，熟悉Ajax，了解HTTP，虚拟DOM。}
+%\cvline{}{了解基本的数据结构与算法。}
+%\cvline{数据库}{熟练使用MySQL。}
+%\cvline{Web框架}{熟悉Vue.js；了解Laravel。}
+\cvline{工具}{了解Git，LaTeX的基本用法；掌握简单PhotoShop工具，能根据设计稿制作页面。}
+\cvline{英语}{CET-6: 445}
+
+\section{项目经历}
+\cventry{17.01 - 17.02}
+{个人博客 （个人项目）}
+{}
+{}{}
+{使用Vue.js框架搭建，Vue-Router搭建前端路由，Vue-Resource进行数据交互，Vuex管理状态。样式使用Sass编写，并引入了Bootstrap帮助快速搭建，实现响应式布局。部分JavaScript代码使用ES6语法编写，并采用模块化开发。后台使用PHP编写，Vuex进行登陆状态的检查。}
+
+\cventry{16.11 - 16.12}
+{摄影大赛网站 （团队项目）}
+{}
+{}{}
+{参与了陕西省高校手机随拍摄影大赛网站的搭建，负责首页及注册页前端制作和后台注册、登录、上传作品代码编写。使用了基础的表单来上传文件，PHP将其重命名后存放在服务器下。}
+
+\cventry{16.04 - 16.06}
+{学工部网站 （团队项目）}
+{}
+{}{}
+{参与了长安大学学工部网站的搭建，负责两版首页的制作，后又进行一次重制。前端采用基本的HTML+CSS(3)制作，部分使用了Bootstrap。后台语言PHP，使用MVC架构模式搭建。}
+
+\section{校园经历} % (fold)
+\cventry{2016 - 2017}
+{长安大学讯澜工作社副主席}{}{}{}{在任期间负责分管工作社技术部工作，并参与陕西省高校手机随拍摄影大赛网站制作。}
+\cventry{2015 - 2016}
+{长安大学讯澜工作社技术部副部长}{}{}{}{负责审核提交给中国大学生在线的共14个专题网页，并参与长安大学学工部网站制作。}
+\cventry{2014 - 2015}
+{长安大学讯澜工作社干事，长安大学青年志愿者服务总队干事}{}{}{}{在工作社技术部负责制作专题网页；在青总参加了周末课堂、下乡表演、保护鲨鱼等活动。}
+
+\section{自我评价} % (fold)
+\cventry{}
+{乐观开朗，积极向上；对事负责，对人坦诚；热爱新事物，有团队精神。}{}{}{}{}
+
+\closesection{}                   % needed to renewcommands
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
